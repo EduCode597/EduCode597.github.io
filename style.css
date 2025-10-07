@@ -47,6 +47,17 @@
     --text-dark: #f2f2f2;
 }
 
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .card-title b,
+[data-theme="dark"] .card-subtitle,
+[data-theme="dark"] .card-subtitle b,
+[data-theme="dark"] .card-header,
+[data-theme="dark"] .card-header b,
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .section-title b {
+    color: var(--text-light) !important;
+}
+
 html, body {
     font-family: var(--regular-font);
     background: var(--gradient-bg);
