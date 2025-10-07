@@ -254,6 +254,10 @@ ul li {
     transform: translateY(0);
 }
 
+.theme-text {
+    color: var(--text-dark) !important;
+}
+
 @media (max-width: 1200px) {
     .profile-text { font-size: .68rem; }
     .btn-edu { width: 160px; }
