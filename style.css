@@ -1,24 +1,57 @@
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+  font-family: "Gilroy-Bold";
+  src: url("fonts/Gilroy-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+  font-family: "Gilroy-Medium";
+  src: url("fonts/Gilroy-Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
+  font-family: "Gilroy-Regular";
+  src: url("fonts/Gilroy-Regular.ttf") format("truetype");
 }
 
 :root {
-    --regular-font: 'Gilroy-Regular', sans-serif;
-    --bold-font: 'Gilroy-Bold', sans-serif;
-    --medium-font: 'Gilroy-Medium', sans-serif;   
+  --regular-font: "Gilroy-Regular", sans-serif;
+  --bold-font: "Gilroy-Bold", sans-serif;
+  --medium-font: "Gilroy-Medium", sans-serif;
 }
 
 body {
-    background-color: #2F362F;
+  background-color: #2f362f;
+}
+
+/* Scoped styles for the Projects card to complement existing colors/fonts */
+.projects-card {
+  background-color: #d9d3c6; /* matches existing card background */
+  color: #2f362f;
+  font-family: var(--regular-font);
+}
+.projects-card .card-title {
+  font-family: var(--bold-font);
+  color: #788978;
+  margin-bottom: 0.5rem;
+}
+.project-card-body {
+  height: auto;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .project-card-body {
+    height: 380px;
+  }
+}
+.project-carousel .carousel-item img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+/* Slightly darken caption background for legibility */
+.project-carousel .carousel-caption {
+  background: rgba(47, 54, 47, 0.45); /* tie to #2F362F with transparency */
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
