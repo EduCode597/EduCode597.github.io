@@ -55,3 +55,21 @@ body {
   padding: 0.75rem;
   border-radius: 0.5rem;
 }
+
+.equal-cards .col-md-6 {
+  display: flex;
+}
+
+.equal-cards .card {
+  flex: 1;
+  height: 100%;
+}
+
+.club-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
