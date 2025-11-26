@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edu Code</title>
+  <link rel="icon" type="image/svg+xml" href="images/Madriaga_logo.svg" />
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -13,7 +14,7 @@
 
 <body style="background-color: #2f362f">
   <div class="container-fluid">
-    <div class="row align-items-start">
+    <div class="row align-items-center">
       <!-- LEFT COLUMN -->
       <div class="col-12 col-lg-6 p-4 text-center">
         <!-- Profile -->
@@ -151,11 +152,12 @@
         <div class="card rounded-5 mt-4 projects-card">
           <div class="card-body project-card-body p-2 p-md-3 project-carousel">
             <h1 class="card-title text-start">Projects</h1>
-            <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+            <div id="carouselProject" class="carousel slide h-100" data-bs-ride="carousel">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="0"
                   class="active"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="2"></button>
               </div>
               <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
@@ -186,13 +188,27 @@
                         ">Visit Now</a>
                   </div>
                 </div>
+
+                <div class="carousel-item h-100">
+                  <a href="https://educode597.github.io/Gallery/" class="d-block h-100">
+                    <img src="images/projects/gallery.jpg" class="d-block w-100" alt="Slide 3" />
+                  </a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>My Gallery</h5>
+                    <p>Showcase of the People Around Me</p>
+                    <a href="https://educode597.github.io/Gallery/" class="btn text-dark" style="
+                          background-color: #788978;
+                          font-family: var(--bold-font);
+                        ">Visit Now</a>
+                  </div>
+                </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProject"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
