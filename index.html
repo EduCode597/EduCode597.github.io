@@ -4,223 +4,833 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Edu Code</title>
+  <meta name="description" content="EduCode (John Eduard Madriaga) — Personal portfolio showcasing applied tech stacks, web applications, full-stack projects, and GitHub repositories." />
+  <meta name="author" content="John Eduard Madriaga (EduCode)" />
+  <title>EduCode — John Eduard Madriaga | Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="images/Madriaga_logo.svg" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap Icons & Styles -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: #2f362f">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <!-- LEFT COLUMN -->
-      <div class="col-12 col-lg-6 p-4 text-center">
-        <!-- Profile -->
-        <div class="card rounded-4 mb-2" style="background-color: #d9d3c6; color: black">
-          <div class="row g-0 align-items-center">
-            <div class="col-12 col-md-4 text-center p-3">
-              <img src="images/c95fac0b-1846-4ae0-9d99-020480d8e43c.jpg" class="img-fluid rounded-5" alt="Profile" />
-            </div>
-            <div class="col-12 col-md-8">
-              <div class="card-body text-center text-md-start">
-                <h1 class="card-title" style="font-family: var(--bold-font)">
-                  EduCode
-                </h1>
-                <p class="card-text" style="font-family: var(--regular-font)">
-                  I am a student from Polytechnic University of the
-                  Philippines, currently taking up Bachelor of Science in
-                  Information Technology. I aim to become a full stack web
-                  developer in the future, focusing now on front-end
-                  development.
-                </p>
-              </div>
-            </div>
-          </div>
+<body>
+  <!-- ==========================================================================
+       Glass Header / Navbar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="app-container">
+      <nav class="nav-wrapper" aria-label="Main Navigation">
+        <a href="#about" class="brand-link" aria-label="EduCode Home">
+          <img src="images/Madriaga_logo.svg" alt="EduCode Logo" class="brand-logo" width="32" height="32" />
+          <span class="brand-name">EduCode<span class="brand-sub">.dev</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-item-link">About</a></li>
+          <li><a href="#skills" class="nav-item-link">Tech Stacks</a></li>
+          <li><a href="#projects" class="nav-item-link">Projects</a></li>
+          <li><a href="#education" class="nav-item-link">Education</a></li>
+          <li><a href="#contact" class="nav-item-link">Contact</a></li>
+        </ul>
+
+        <div class="status-badge" title="Actively learning and open to collaborative tech projects">
+          <span class="status-dot"></span>
+          <span>Open to Projects</span>
         </div>
-        <!-- Text Stacks -->
-        <h1 class="text-center p-2" style="
-              color: #788978;
-              text-shadow: 2px 2px 4px black;
-              font-family: var(--bold-font);
-            ">
-          Text Stacks
-        </h1>
-        <div class="row g-3">
-          <div class="col-4">
-            <div class="card rounded-5 p-3" style="background-color: #d9d3c6">
-              <i class="bi bi-filetype-html" style="font-size: 60px; color: #e34f26"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Quick Jump Bar -->
+  <div class="app-container">
+    <nav class="mobile-nav-bar" aria-label="Mobile Navigation">
+      <a href="#about" class="mobile-nav-item">About</a>
+      <a href="#skills" class="mobile-nav-item">Tech Stacks</a>
+      <a href="#projects" class="mobile-nav-item">Projects</a>
+      <a href="#education" class="mobile-nav-item">Education</a>
+      <a href="#contact" class="mobile-nav-item">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero & Identity Bento Section
+         ========================================================================== -->
+    <section id="about" class="bento-section">
+      <div class="app-container">
+        <div class="section-meta">Profile &amp; Focus</div>
+        <h1 class="section-title">Building Modern Web Interfaces &amp; Software</h1>
+        <p class="section-subtitle">
+          BSIT student at Polytechnic University of the Philippines with a strong foundation in frontend engineering, expanding into scalable full-stack web and API architectures.
+        </p>
+
+        <div class="hero-grid">
+          <!-- Bento Card 1: Profile Spotlight -->
+          <article class="bento-card hero-profile-card">
+            <div class="profile-avatar-wrap">
+              <img src="images/c95fac0b-1846-4ae0-9d99-020480d8e43c.jpg" alt="John Eduard Madriaga" width="88" height="88" />
             </div>
-          </div>
-          <div class="col-4">
-            <div class="card rounded-5 p-3" style="background-color: #d9d3c6">
-              <i class="bi bi-filetype-css" style="font-size: 60px; color: #2965f1"></i>
+            <h2 class="hero-name">John Eduard Madriaga</h2>
+            <div class="hero-handle">@EduCode597</div>
+            <div class="hero-role">Aspiring Full-Stack Web Developer</div>
+            <p class="hero-institution">
+              <i class="bi bi-mortarboard-fill text-muted"></i>
+              <span>BS in Information Technology &bull; PUP Sto. Tomas</span>
+            </p>
+          </article>
+
+          <!-- Bento Card 2: Bio & Engineering Goals -->
+          <article class="bento-card hero-bio-card">
+            <div class="section-meta">Bio &amp; Goals</div>
+            <p class="bio-quote">
+              I am driven by creating <strong>high-performance, user-centric web applications</strong>. While my current focus is centered on refined frontend design and responsive architectures, I actively engineer microservices, REST APIs, and database-backed systems.
+            </p>
+            <div class="focus-pills">
+              <span class="focus-pill">Responsive Design</span>
+              <span class="focus-pill">API Integration</span>
+              <span class="focus-pill">Clean UI Architecture</span>
+              <span class="focus-pill">Object-Oriented Design</span>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="card rounded-5 p-3" style="background-color: #d9d3c6">
-              <i class="bi bi-bootstrap-fill" style="font-size: 60px; color: #563d7c"></i>
+          </article>
+
+          <!-- Bento Card 3: Direct Actions & Socials -->
+          <article id="contact" class="bento-card hero-contact-card">
+            <div class="section-meta">Connect &amp; Resume</div>
+            <div class="contact-actions">
+              <a href="https://github.com/EduCode597" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+                <i class="bi bi-github"></i>
+                <span>GitHub Profile</span>
+              </a>
+              <button type="button" class="btn-secondary-action copy-email-btn" id="copyEmailBtn" data-email="educode597@gmail.com">
+                <i class="bi bi-envelope-fill"></i>
+                <span>Copy Email</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <!-- Educational Background & Socials -->
-        <div class="row mt-4 g-3">
-          <div class="col-12 col-md-6">
-            <div class="card text-center rounded-5 h-100" style="background-color: #788978">
-              <div class="card-body">
-                <h5 class="card-title" style="
-                      font-family: var(--bold-font);
-                      color: #d9d3c6;
-                      text-shadow: 2px 2px 4px #2f362f;
-                    ">
-                  Educational Background
-                </h5>
-                <a href="#" class="btn mt-2" style="
-                      background-color: #d9d3c6;
-                      font-family: var(--bold-font);
-                    ">Go somewhere</a>
-              </div>
+
+            <div class="social-links-bar" aria-label="Social Profiles">
+              <a href="https://github.com/EduCode597" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.facebook.com/johneduard.madriaga.7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/duard.gg/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="card text-center rounded-5 h-100" style="background-color: #788978">
-              <div class="card-body">
-                <h4 class="card-title" style="
-                      font-family: var(--bold-font);
-                      color: #d9d3c6;
-                      text-shadow: 2px 2px 4px #2f362f;
-                    ">
-                  Socials
-                </h4>
-                <div class="d-flex justify-content-evenly gap-3 mt-2">
-                  <a href="https://www.facebook.com/johneduard.madriaga.7" target="_blank" rel="noopener noreferrer"
-                    class="text-dark mx-2" aria-label="Facebook">
-                    <i class="bi bi-facebook" style="font-size: xx-large"></i>
-                  </a>
-                  <a href="https://www.instagram.com/duard.gg/" target="_blank" rel="noopener noreferrer"
-                    class="text-dark mx-2" aria-label="Instagram">
-                    <i class="bi bi-instagram" style="font-size: xx-large"></i>
-                  </a>
-                  <a href="https://github.com/EduCode597" target="_blank" rel="noopener noreferrer"
-                    class="text-dark mx-2" aria-label="GitHub">
-                    <i class="bi bi-github" style="font-size: xx-large"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-lg-6 p-4 text-center">
-        <div class="row g-3 mb-5 equal-cards">
-          <!-- First Card -->
-          <div class="col-12 col-md-6">
-            <div class="card rounded-5 h-100" style="background-color: #788978; color: #2F362F;">
-              <a href="https://www.pup.edu.ph/stotomas/" target="_blank" class="stretched-link"></a>
-              <div class="row g-0 align-items-center p-2">
-                <div class="col-4">
-                  <img src="images/icons/PUP logo.png" alt="PUPLOGO" class="club-logo">
-                </div>
-                <div class="col-8 text-center">
-                  <h3 class="card-title" style="font-family: var(--bold-font);">PUP <br> Sto. Tomas</h3>
-                </div>
-              </div>
+    <!-- ==========================================================================
+         Tech Stacks Matrix (Categorized Bento)
+         ========================================================================== -->
+    <section id="skills" class="bento-section">
+      <div class="app-container">
+        <div class="section-meta">Competencies</div>
+        <h2 class="section-title">Tech Stacks &amp; Skills</h2>
+        <p class="section-subtitle">
+          Technologies and tools applied across personal projects, group collaborations, and academic repositories. Click any skill chip to highlight matching projects.
+        </p>
+
+        <div class="tech-stacks-grid">
+          <!-- Category 1: Frontend & UI -->
+          <article class="bento-card">
+            <div class="stack-category-header">
+              <i class="bi bi-window-sidebar stack-category-icon"></i>
+              <h3 class="stack-category-title">Frontend &amp; UI</h3>
             </div>
-          </div>
-
-          <!-- Second Card -->
-          <div class="col-12 col-md-6">
-            <div class="card rounded-5 h-100" style="background-color: #788978; color: #2F362F;">
-              <a href="https://www.facebook.com/share/17aqtWexju/" target="_blank" class="stretched-link"></a>
-              <div class="row g-0 align-items-center p-2">
-                <div class="col-4">
-                  <img src="images/icons/triwan.jpg" alt="TRIWAN" class="club-logo">
-                </div>
-                <div class="col-8 text-center">
-                  <h3 class="card-title" style="font-family: var(--bold-font);">Triwan <br> Club</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <!-- Projects -->
-        <div class="card rounded-5 mt-4 projects-card">
-          <div class="card-body project-card-body p-2 p-md-3 project-carousel">
-            <h1 class="card-title text-start">Projects</h1>
-            <div id="carouselProject" class="carousel slide h-100" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="0"
-                  class="active"></button>
-                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#carouselProject" data-bs-slide-to="3"></button>
-              </div>
-              <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                  <a href="https://educode597.github.io/SamsungS24Ultra/" class="d-block h-100">
-                    <img src="images/projects/samsung.jpg" class="d-block w-100" alt="Slide 1" />
-                  </a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Samsung S24 Ultra</h5>
-                    <p>
-                      Click the image to explore more about Samsung S24 Ultra
-                    </p>
-                    <a href="https://educode597.github.io/SamsungS24Ultra/" class="btn" style="
-                          background-color: #788978;
-                          font-family: var(--bold-font);
-                        ">Learn More</a>
-                  </div>
-                </div>
-                <div class="carousel-item h-100">
-                  <a href="https://educode597.github.io/Vigan-City/" class="d-block h-100">
-                    <img src="images/projects/vigan.jpg" class="d-block w-100" alt="Slide 2" />
-                  </a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Vigan Heritage Escape</h5>
-                    <p>Discover the rich history and culture of Vigan City</p>
-                    <a href="https://educode597.github.io/Vigan-City/" class="btn text-dark" style="
-                          background-color: #788978;
-                          font-family: var(--bold-font);
-                        ">Visit Now</a>
-                  </div>
-                </div>
-
-                <div class="carousel-item h-100">
-                  <a href="https://educode597.github.io/Gallery/" class="d-block h-100">
-                    <img src="images/projects/gallery.jpg" class="d-block w-100" alt="Slide 3" />
-                  </a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>My Gallery</h5>
-                    <p>Showcase of the People Around Me</p>
-                    <a href="https://educode597.github.io/Gallery/" class="btn text-dark" style="
-                          background-color: #788978;
-                          font-family: var(--bold-font);
-                        ">Visit Now</a>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <div class="skills-badge-list">
+              <button type="button" class="skill-chip" data-skill="html5">
+                <i class="bi bi-filetype-html"></i><span>HTML5</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselProject"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+              <button type="button" class="skill-chip" data-skill="css3">
+                <i class="bi bi-filetype-css"></i><span>CSS3</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="javascript">
+                <i class="bi bi-filetype-js"></i><span>JavaScript (ES6+)</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="typescript">
+                <i class="bi bi-filetype-tsx"></i><span>TypeScript</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="react">
+                <i class="bi bi-atom"></i><span>React</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="bootstrap">
+                <i class="bi bi-bootstrap-fill"></i><span>Bootstrap 5</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="tailwind">
+                <i class="bi bi-wind"></i><span>Tailwind CSS</span>
               </button>
             </div>
-          </div>
+          </article>
+
+          <!-- Category 2: Backend & APIs -->
+          <article class="bento-card">
+            <div class="stack-category-header">
+              <i class="bi bi-hdd-network stack-category-icon"></i>
+              <h3 class="stack-category-title">Backend &amp; APIs</h3>
+            </div>
+            <div class="skills-badge-list">
+              <button type="button" class="skill-chip" data-skill="nodejs">
+                <i class="bi bi-terminal-fill"></i><span>Node.js / Express</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="python">
+                <i class="bi bi-filetype-py"></i><span>Python / FastAPI</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="php">
+                <i class="bi bi-filetype-php"></i><span>PHP</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="api">
+                <i class="bi bi-cpu"></i><span>RESTful APIs</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="websocket">
+                <i class="bi bi-broadcast"></i><span>WebSockets</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Category 3: Databases & Architecture -->
+          <article class="bento-card">
+            <div class="stack-category-header">
+              <i class="bi bi-database-check stack-category-icon"></i>
+              <h3 class="stack-category-title">Database &amp; Concepts</h3>
+            </div>
+            <div class="skills-badge-list">
+              <button type="button" class="skill-chip" data-skill="mysql">
+                <i class="bi bi-database"></i><span>MySQL</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="supabase">
+                <i class="bi bi-lightning-charge-fill"></i><span>Supabase</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="git">
+                <i class="bi bi-git"></i><span>Git &amp; GitHub</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="oop">
+                <i class="bi bi-diagram-3-fill"></i><span>OOP Paradigms</span>
+              </button>
+              <button type="button" class="skill-chip" data-skill="docker">
+                <i class="bi bi-box-seam"></i><span>Docker Compose</span>
+              </button>
+            </div>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Project Case Studies (Detailed Repositories Showcase)
+         ========================================================================== -->
+    <section id="projects" class="bento-section">
+      <div class="app-container">
+        <div class="section-meta">Selected Works</div>
+        <h2 class="section-title">Projects &amp; Case Studies</h2>
+        <p class="section-subtitle">
+          Real software repositories detailing the problems solved, technical architecture, and specific skills applied.
+        </p>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper" role="tablist" aria-label="Project Category Filter">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Works (<span id="count-all">10</span>)
+          </button>
+          <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">
+            Web Design &amp; Frontend (<span id="count-frontend">4</span>)
+          </button>
+          <button type="button" class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
+            APIs &amp; Full-Stack (<span id="count-fullstack">2</span>)
+          </button>
+          <button type="button" class="filter-btn" data-filter="academic" role="tab" aria-selected="false">
+            Academic &amp; OOP (<span id="count-academic">4</span>)
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- 1. CitiSent (Lead Featured Full-Stack Project) -->
+          <article class="bento-card project-card project-featured" data-category="fullstack" data-skills="react tailwind api python nodejs supabase websocket docker">
+            <div class="project-top-meta">
+              <span class="project-category-tag">Full-Stack &bull; AI Service</span>
+              <span class="project-status">Public Collaboration</span>
+            </div>
+            <h3 class="project-heading">
+              <span>CitiSent &mdash; Emotion-Aware Civic Reporting System</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Traditional civic complaint portals suffer from backlogged, unprioritized reporting. CitiSent analyzes the urgency and emotional sentiment of citizen submissions in real time, routing critical municipal issues to city administrators with live interactive triage dashboards.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">React 19</span>
+              <span class="project-tech-tag">Tailwind CSS v4</span>
+              <span class="project-tech-tag">TanStack Query</span>
+              <span class="project-tech-tag">Node.js Gateway</span>
+              <span class="project-tech-tag">FastAPI (Python)</span>
+              <span class="project-tech-tag">Google Gemini AI</span>
+              <span class="project-tech-tag">Supabase</span>
+              <span class="project-tech-tag">WebSockets</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/CitiSent-Project/CitiSent" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. PinoyVideoke / Karaoke -->
+          <article class="bento-card project-card project-regular" data-category="frontend" data-skills="typescript react css3 html5">
+            <div class="project-top-meta">
+              <span class="project-category-tag">Web Application</span>
+              <span class="project-status">Live Deployed</span>
+            </div>
+            <h3 class="project-heading">
+              <span>PinoyVideoke / Karaoke</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Replicates the authentic, nostalgic Philippine videoke machine experience (Megapro, Platinum, TJ Media) inside a responsive, modern web interface featuring queue controls and synchronized lyrics display.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">TypeScript</span>
+              <span class="project-tech-tag">React</span>
+              <span class="project-tech-tag">Web Audio API</span>
+              <span class="project-tech-tag">CSS Modules</span>
+              <span class="project-tech-tag">Vercel Deployment</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://karaoke-navy-ten.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/EduCode597/Karaoke" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-github"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. SnapEat -->
+          <article class="bento-card project-card project-regular" data-category="fullstack" data-skills="python javascript html5 css3 api">
+            <div class="project-top-meta">
+              <span class="project-category-tag">Nutrition &amp; Web App</span>
+              <span class="project-status">Live Deployed</span>
+            </div>
+            <h3 class="project-heading">
+              <span>SnapEat &mdash; Food &amp; Calorie Tracking</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Offers an interactive food discovery and nutrition calculation workflow, providing students and health-conscious users with simplified dietary tracking and food log analysis.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">Python Backend</span>
+              <span class="project-tech-tag">JavaScript</span>
+              <span class="project-tech-tag">HTML5 / CSS3</span>
+              <span class="project-tech-tag">API Integration</span>
+              <span class="project-tech-tag">Vercel</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://snapeat-henna.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/timbibat/snapeat" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-github"></i>
+                <span>Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Hotel Management System -->
+          <article class="bento-card project-card project-regular" data-category="academic" data-skills="php mysql javascript css3 oop">
+            <div class="project-top-meta">
+              <span class="project-category-tag">Enterprise Backend</span>
+              <span class="project-status">Academic Collaboration</span>
+            </div>
+            <h3 class="project-heading">
+              <span>Hotel Management System</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Automates hospitality operations including room reservations, guest check-in records, housekeeping room status updates, and transaction billing calculations backed by a relational database schema.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">PHP</span>
+              <span class="project-tech-tag">MySQL Database</span>
+              <span class="project-tech-tag">Relational Modeling</span>
+              <span class="project-tech-tag">JavaScript</span>
+              <span class="project-tech-tag">CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/DarrenGuev/Hotel-Management-System" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. VENTO-corp -->
+          <article class="bento-card project-card project-regular" data-category="academic" data-skills="php mysql oop html5 css3">
+            <div class="project-top-meta">
+              <span class="project-category-tag">INTE302 Project</span>
+              <span class="project-status">Final Project</span>
+            </div>
+            <h3 class="project-heading">
+              <span>VENTO-corp Enterprise Portal</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Built as the INTE302 final project, delivering a cohesive corporate resource portal with modular user permission tiers, database persistence, and structured object-oriented backend controllers.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">PHP</span>
+              <span class="project-tech-tag">OOP Architecture</span>
+              <span class="project-tech-tag">MySQL</span>
+              <span class="project-tech-tag">HTML5 / CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sijey-CJAA/VENTO-corp" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. GameDevCars -->
+          <article class="bento-card project-card project-regular" data-category="academic" data-skills="python oop">
+            <div class="project-top-meta">
+              <span class="project-category-tag">Game Engineering</span>
+              <span class="project-status">Python Simulation</span>
+            </div>
+            <h3 class="project-heading">
+              <span>GameDevCars &mdash; 2D Physics Simulator</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Implements vehicle dynamics, acceleration vectors, obstacle collision detection, and class-based vehicle entity lifecycles governed by an optimized real-time game loop in Python.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">Pygame</span>
+              <span class="project-tech-tag">OOP Classes &amp; Inheritance</span>
+              <span class="project-tech-tag">Collision Algorithms</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/DarrenGuev/GameDevCars" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. OOP - Dream Team -->
+          <article class="bento-card project-card project-regular" data-category="academic" data-skills="python oop javascript html5 css3">
+            <div class="project-top-meta">
+              <span class="project-category-tag">OOP Paradigms</span>
+              <span class="project-status">Academic Collaboration</span>
+            </div>
+            <h3 class="project-heading">
+              <span>OOP &mdash; Dream Team Core Concepts</span>
+            </h3>
+            <div class="project-problem-box">
+              <span class="problem-label">Problem Solved</span>
+              <p class="problem-text">
+                Demonstrates and tests core object-oriented software engineering principles: Encapsulation, Class Inheritance, Polymorphic method overriding, and Data Abstraction across practical application models.
+              </p>
+            </div>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">OOP Paradigms</span>
+              <span class="project-tech-tag">JavaScript</span>
+              <span class="project-tech-tag">HTML5 / CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/EduCode597/OOP" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-github"></i>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. Samsung S24 Ultra Spotlight -->
+          <article class="bento-card project-card project-spotlight" data-category="frontend" data-skills="html5 css3 bootstrap">
+            <div class="spotlight-thumb">
+              <img src="images/projects/samsung.jpg" alt="Samsung S24 Ultra Showcase" loading="lazy" />
+            </div>
+            <div class="project-top-meta">
+              <span class="project-category-tag">Product Landing</span>
+              <span class="project-status">Live Deployed</span>
+            </div>
+            <h3 class="project-heading">
+              <span>Samsung S24 Ultra Showcase</span>
+            </h3>
+            <p class="problem-text mb-2">
+              High-impact product landing page highlighting specifications, photography capabilities, and clean marketing layout with Bootstrap 5.
+            </p>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">HTML5</span>
+              <span class="project-tech-tag">CSS3</span>
+              <span class="project-tech-tag">Bootstrap 5</span>
+              <span class="project-tech-tag">Responsive UI</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://educode597.github.io/SamsungS24Ultra/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/EduCode597/SamsungS24Ultra" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 9. Vigan Heritage Escape Spotlight -->
+          <article class="bento-card project-card project-spotlight" data-category="frontend" data-skills="html5 css3 bootstrap">
+            <div class="spotlight-thumb">
+              <img src="images/projects/vigan.jpg" alt="Vigan Heritage Escape" loading="lazy" />
+            </div>
+            <div class="project-top-meta">
+              <span class="project-category-tag">Cultural &amp; Tourism Web</span>
+              <span class="project-status">Live Deployed</span>
+            </div>
+            <h3 class="project-heading">
+              <span>Vigan Heritage Escape</span>
+            </h3>
+            <p class="problem-text mb-2">
+              Responsive cultural exploration portal presenting historical landmarks, cobblestone street visuals, and heritage tourist spots of Vigan City.
+            </p>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">HTML5</span>
+              <span class="project-tech-tag">CSS3</span>
+              <span class="project-tech-tag">Bootstrap 5</span>
+              <span class="project-tech-tag">Content Architecture</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://educode597.github.io/Vigan-City/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/EduCode597/Vigan-City" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 10. Responsive Gallery Showcase -->
+          <article class="bento-card project-card project-spotlight" data-category="frontend" data-skills="html5 css3">
+            <div class="spotlight-thumb">
+              <img src="images/projects/gallery.jpg" alt="My Gallery Showcase" loading="lazy" />
+            </div>
+            <div class="project-top-meta">
+              <span class="project-category-tag">Media Grid</span>
+              <span class="project-status">Live Deployed</span>
+            </div>
+            <h3 class="project-heading">
+              <span>Personal Media Gallery</span>
+            </h3>
+            <p class="problem-text mb-2">
+              Responsive grid-based visual gallery showcasing the people and events around me with optimized aspect ratios and responsive layouts.
+            </p>
+            <div class="project-tags-wrap">
+              <span class="project-tech-tag">HTML5</span>
+              <span class="project-tech-tag">CSS Grid</span>
+              <span class="project-tech-tag">Media Queries</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://educode597.github.io/Gallery/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/EduCode597/Gallery" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-github"></i>
+                <span>Source</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education & Community Affiliations Bento
+         ========================================================================== -->
+    <section id="education" class="bento-section">
+      <div class="app-container">
+        <div class="section-meta">Background &amp; Community</div>
+        <h2 class="section-title">Education &amp; Affiliations</h2>
+        <p class="section-subtitle">
+          Academic foundation in Information Technology and active involvement in collaborative student tech communities.
+        </p>
+
+        <div class="education-grid">
+          <!-- Card 1: PUP Sto. Tomas -->
+          <article class="bento-card">
+            <div class="edu-header-row">
+              <div class="edu-logo-wrap">
+                <img src="images/icons/PUP logo.png" alt="Polytechnic University of the Philippines Logo" width="60" height="60" />
+              </div>
+              <div class="edu-title-group">
+                <h3>Polytechnic University of the Philippines</h3>
+                <p>Sto. Tomas Campus &bull; BSIT</p>
+              </div>
+            </div>
+            <ul class="edu-detail-list">
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Bachelor of Science in Information Technology (BSIT)</span>
+              </li>
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Focus on Web Systems, Database Modeling, OOP, and Application Development</span>
+              </li>
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Collaborative academic projects in software design and API development</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-3">
+              <a href="https://www.pup.edu.ph/stotomas/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Visit Campus Portal</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Triwan Club -->
+          <article class="bento-card">
+            <div class="edu-header-row">
+              <div class="edu-logo-wrap">
+                <img src="images/icons/triwan.jpg" alt="Triwan Club Logo" width="60" height="60" />
+              </div>
+              <div class="edu-title-group">
+                <h3>Triwan Club</h3>
+                <p>Student Technology &amp; Leadership Community</p>
+              </div>
+            </div>
+            <ul class="edu-detail-list">
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Active engagement in student peer tech groups and campus activities</span>
+              </li>
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Peer-to-peer programming collaborations and team project coordination</span>
+              </li>
+              <li class="edu-detail-item">
+                <i class="bi bi-check2-circle"></i>
+                <span>Promoting continuous technical learning, leadership, and knowledge sharing</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-3">
+              <a href="https://www.facebook.com/share/17aqtWexju/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <span>Visit Triwan Club</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="app-container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; <span id="currentYear"></span> EduCode (John Eduard Madriaga). Designed with Minimalist UI principles.
+        </p>
+        <button type="button" class="footer-btn-top" id="backToTopBtn" aria-label="Back to Top">
+          <i class="bi bi-arrow-up"></i>
+          <span>Back to Top</span>
+        </button>
       </div>
     </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="copy-toast" id="copyToast" role="status" aria-live="polite">
+    <i class="bi bi-check-circle-fill"></i>
+    <span>Email copied to clipboard!</span>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Client Script for Interactive Behaviors -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Set Current Year
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // 2. Project Category Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const filter = btn.getAttribute('data-filter');
+
+          // Reset any active skill chips
+          document.querySelectorAll('.skill-chip').forEach(c => c.classList.remove('active-filter'));
+
+          projectCards.forEach(card => {
+            card.classList.remove('skill-matched', 'skill-dimmed');
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Skill Chip Click-to-Highlight Logic
+      const skillChips = document.querySelectorAll('.skill-chip');
+      skillChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const isAlreadyActive = chip.classList.contains('active-filter');
+          const skillKey = chip.getAttribute('data-skill');
+
+          // Deactivate all skill chips first
+          skillChips.forEach(c => c.classList.remove('active-filter'));
+
+          if (isAlreadyActive) {
+            // Reset project highlights
+            projectCards.forEach(card => {
+              card.classList.remove('skill-matched', 'skill-dimmed');
+            });
+            return;
+          }
+
+          chip.classList.add('active-filter');
+
+          // Ensure 'All' filter is active so user sees all matching cards across categories
+          const allFilterBtn = document.querySelector('.filter-btn[data-filter="all"]');
+          if (allFilterBtn && !allFilterBtn.classList.contains('active')) {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            allFilterBtn.classList.add('active');
+            projectCards.forEach(card => card.style.display = 'flex');
+          }
+
+          let firstMatchedCard = null;
+          projectCards.forEach(card => {
+            const cardSkills = (card.getAttribute('data-skills') || '').toLowerCase();
+            if (cardSkills.includes(skillKey)) {
+              card.classList.add('skill-matched');
+              card.classList.remove('skill-dimmed');
+              card.style.display = 'flex';
+              if (!firstMatchedCard) firstMatchedCard = card;
+            } else {
+              card.classList.remove('skill-matched');
+              card.classList.add('skill-dimmed');
+            }
+          });
+
+          // Smooth scroll towards the first matched project if not currently in view
+          if (firstMatchedCard) {
+            const rect = firstMatchedCard.getBoundingClientRect();
+            if (rect.top < 0 || rect.bottom > window.innerHeight) {
+              firstMatchedCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
+        });
+      });
+
+      // 4. Copy Email to Clipboard
+      const copyBtn = document.getElementById('copyEmailBtn');
+      const toast = document.getElementById('copyToast');
+
+      if (copyBtn && toast) {
+        copyBtn.addEventListener('click', async () => {
+          const email = copyBtn.getAttribute('data-email') || 'educode597@gmail.com';
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(email);
+            } else {
+              // Fallback
+              const textArea = document.createElement('textarea');
+              textArea.value = email;
+              textArea.style.position = 'fixed';
+              textArea.style.left = '-999999px';
+              document.body.appendChild(textArea);
+              textArea.focus();
+              textArea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textArea);
+            }
+
+            // Show Toast
+            toast.classList.add('show');
+            setTimeout(() => {
+              toast.classList.remove('show');
+            }, 2800);
+          } catch (err) {
+            console.error('Failed to copy email:', err);
+          }
+        });
+      }
+
+      // 5. Back to Top Button
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // 6. Active Navigation Link on Scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-item-link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPosition = window.scrollY + 100;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      }, { passive: true });
+    });
+  </script>
 </body>
 
 </html>
