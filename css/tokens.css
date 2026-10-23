@@ -23,7 +23,7 @@
 
 /* Design Tokens */
 :root {
-  /* Color Palette - Stealth Minimalist Dark with Sage Accents */
+  /* Design Tokens - Stealth Minimalist Dark with Sage Accents (Default) */
   --bg-primary: #111312;
   --bg-surface: #171A18;
   --bg-surface-elevated: #1F2320;
@@ -44,6 +44,16 @@
   --text-secondary: #9FA69F;
   --text-muted: #6C746C;
 
+  /* Shadows & Ambient */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 50px -10px rgba(0, 0, 0, 0.7);
+  --shadow-toast: 0 10px 25px rgba(0, 0, 0, 0.5);
+  --bg-ambient-1: rgba(120, 137, 120, 0.05);
+  --bg-ambient-2: rgba(120, 137, 120, 0.04);
+  --status-online: #4ade80;
+  --status-online-glow: rgba(74, 222, 128, 0.6);
+
   /* Font Families */
   --font-bold: "Gilroy-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-medium: "Gilroy-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -61,6 +71,72 @@
   /* Transitions */
   --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-theme: background-color 240ms cubic-bezier(0.16, 1, 0.3, 1),
+                      border-color 240ms cubic-bezier(0.16, 1, 0.3, 1),
+                      color 240ms cubic-bezier(0.16, 1, 0.3, 1),
+                      box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light Theme (Option C - Minimalist High Contrast: #FEFCED, #31352E, #535E4B, #A9AE5D) */
+[data-theme="light"] {
+  --bg-primary: #FEFCED;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F8F7EE;
+  --bg-surface-soft: #EFEBD7;
+  --bg-glass: rgba(254, 252, 237, 0.94);
+
+  --border-subtle: rgba(49, 53, 46, 0.18);
+  --border-accent: #31352E;
+  --border-focus: #535E4B;
+
+  --accent-sage: #535E4B;
+  --accent-sage-light: #A9AE5D;
+  --accent-sage-glow: rgba(169, 174, 93, 0.22);
+  --accent-warm-bone: #535E4B;
+
+  --text-display: #31352E;
+  --text-primary: #31352E;
+  --text-secondary: #535E4B;
+  --text-muted: #737B6D;
+
+  --shadow-sm: 0 2px 8px rgba(49, 53, 46, 0.08);
+  --shadow-md: 0 8px 24px rgba(49, 53, 46, 0.12);
+  --shadow-lg: 0 20px 40px -10px rgba(49, 53, 46, 0.16);
+  --shadow-toast: 0 10px 25px rgba(49, 53, 46, 0.2);
+  --bg-ambient-1: rgba(169, 174, 93, 0.08);
+  --bg-ambient-2: rgba(83, 94, 75, 0.06);
+}
+
+/* Automatic System Preference Support (if no explicit data-theme is set) */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="light"]) {
+    --bg-primary: #FEFCED;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #F8F7EE;
+    --bg-surface-soft: #EFEBD7;
+    --bg-glass: rgba(254, 252, 237, 0.94);
+
+    --border-subtle: rgba(49, 53, 46, 0.18);
+    --border-accent: #31352E;
+    --border-focus: #535E4B;
+
+    --accent-sage: #535E4B;
+    --accent-sage-light: #A9AE5D;
+    --accent-sage-glow: rgba(169, 174, 93, 0.22);
+    --accent-warm-bone: #535E4B;
+
+    --text-display: #31352E;
+    --text-primary: #31352E;
+    --text-secondary: #535E4B;
+    --text-muted: #737B6D;
+
+    --shadow-sm: 0 2px 8px rgba(49, 53, 46, 0.08);
+    --shadow-md: 0 8px 24px rgba(49, 53, 46, 0.12);
+    --shadow-lg: 0 20px 40px -10px rgba(49, 53, 46, 0.16);
+    --shadow-toast: 0 10px 25px rgba(49, 53, 46, 0.2);
+    --bg-ambient-1: rgba(169, 174, 93, 0.08);
+    --bg-ambient-2: rgba(83, 94, 75, 0.06);
+  }
 }
 
 /* Global Reset & Base Styles */
@@ -87,6 +163,7 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: var(--transition-theme);
 }
 
 /* Skip Link */
@@ -119,10 +196,11 @@ body::before {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 15% 15%, rgba(120, 137, 120, 0.05) 0%, transparent 45%),
-    radial-gradient(circle at 85% 85%, rgba(120, 137, 120, 0.04) 0%, transparent 40%);
+    radial-gradient(circle at 15% 15%, var(--bg-ambient-1) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, var(--bg-ambient-2) 0%, transparent 40%);
   pointer-events: none;
   z-index: 0;
+  transition: opacity var(--transition-smooth);
 }
 
 /* Scrollbar Customization */
