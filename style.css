@@ -89,6 +89,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1001;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border-focus);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface-elevated);
+  color: var(--text-display);
+  font-family: var(--font-medium);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus-visible {
+  top: 1rem;
+  outline: 2px solid var(--accent-sage-light);
+  outline-offset: 2px;
+}
+
 /* Subtle Ambient Grain / Radial Lighting */
 body::before {
   content: "";
