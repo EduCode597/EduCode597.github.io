@@ -1,0 +1,74 @@
+/* ==========================================================================
+   EduCode Portfolio - Education & Community Affiliations Bento
+   ========================================================================== */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.edu-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edu-logo-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.edu-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edu-title-group h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.edu-title-group p {
+  font-size: 0.85rem;
+  color: var(--accent-sage);
+  font-family: var(--font-mono);
+}
+
+.edu-detail-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.edu-detail-item {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.edu-detail-item i {
+  color: var(--accent-sage);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
