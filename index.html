@@ -16,26 +16,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=v20261028_1" />
 
     <!-- Anti-FOUT Theme Initializer -->
     <script>
-      (function() {
+      (function () {
         try {
-          const saved = localStorage.getItem('educode_portfolio_theme');
-          const system = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-          const theme = saved === 'light' || saved === 'dark' ? saved : system;
-          document.documentElement.setAttribute('data-theme', theme);
+          const saved = localStorage.getItem("educode_portfolio_theme");
+          const system =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+          const theme = saved === "light" || saved === "dark" ? saved : system;
+          document.documentElement.setAttribute("data-theme", theme);
         } catch (e) {}
       })();
     </script>
   </head>
 
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Floating Mobile Toggle Button (Visible on screens < 1200px) -->
-    <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Open Navigation" aria-expanded="false" aria-controls="floatingSidebar">
+    <!-- Floating Mobile Toggle Button (Visible on screens < 1200px) -->
+    <button
+      class="sidebar-toggle-btn"
+      id="sidebarToggleBtn"
+      aria-label="Open Navigation"
+      aria-expanded="false"
+      aria-controls="floatingSidebar"
+    >
       <span class="toggle-icon">
         <i class="bi bi-list"></i>
       </span>
@@ -43,7 +53,13 @@
     </button>
 
     <!-- Floating Mobile Theme Toggle (Visible on screens < 1200px) -->
-    <button class="theme-toggle-mobile-btn" id="themeToggleMobile" type="button" aria-label="Switch between light and dark theme" title="Switch Theme">
+    <button
+      class="theme-toggle-mobile-btn"
+      id="themeToggleMobile"
+      type="button"
+      aria-label="Switch between light and dark theme"
+      title="Switch Theme"
+    >
       <i class="bi bi-sun-fill theme-icon-sun"></i>
       <i class="bi bi-moon-stars-fill theme-icon-moon"></i>
     </button>
@@ -52,7 +68,11 @@
     <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
 
     <!-- Floating Navigation Sidebar -->
-    <aside class="floating-sidebar" id="floatingSidebar" aria-label="Main Navigation">
+    <aside
+      class="floating-sidebar"
+      id="floatingSidebar"
+      aria-label="Main Navigation"
+    >
       <div class="sidebar-inner">
         <!-- 1. Header & Brand Block -->
         <div class="sidebar-header">
@@ -71,13 +91,21 @@
               <span class="brand-subtitle">John Eduard Madriaga</span>
             </div>
           </a>
-          <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close Navigation">
+          <button
+            class="sidebar-close-btn"
+            id="sidebarCloseBtn"
+            aria-label="Close Navigation"
+          >
             <i class="bi bi-x-lg"></i>
           </button>
         </div>
 
         <!-- 2. Status Banner -->
-        <a href="#contact" class="sidebar-status-banner" title="Click to view contact information">
+        <a
+          href="#contact"
+          class="sidebar-status-banner"
+          title="Click to view contact information"
+        >
           <i class="bi bi-info-circle status-banner-icon"></i>
           <span class="status-banner-text">Open to Opportunities</span>
           <span class="status-dot-pulse"></span>
@@ -87,7 +115,12 @@
         <nav class="sidebar-nav" aria-label="Navigation Categories">
           <!-- Category 01: Profile & About -->
           <div class="nav-accordion-group is-open" data-group="about">
-            <button class="accordion-header" type="button" aria-expanded="true" aria-controls="group-about-links">
+            <button
+              class="accordion-header"
+              type="button"
+              aria-expanded="true"
+              aria-controls="group-about-links"
+            >
               <span class="group-title-wrap">
                 <span class="group-num">01</span>
                 <span class="group-label">Profile &amp; About</span>
@@ -97,19 +130,31 @@
             <div class="accordion-body" id="group-about-links">
               <ul class="accordion-links-list">
                 <li>
-                  <a href="#about" class="accordion-sub-link active" data-target="about">
+                  <a
+                    href="#about"
+                    class="accordion-sub-link active"
+                    data-target="about"
+                  >
                     <span class="sub-link-num">1</span>
                     <span class="sub-link-text">Bio &amp; Focus</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#about" class="accordion-sub-link" data-target="about">
+                  <a
+                    href="#about"
+                    class="accordion-sub-link"
+                    data-target="about"
+                  >
                     <span class="sub-link-num">2</span>
                     <span class="sub-link-text">Highlights</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" class="accordion-sub-link" data-target="contact">
+                  <a
+                    href="#contact"
+                    class="accordion-sub-link"
+                    data-target="contact"
+                  >
                     <span class="sub-link-num">3</span>
                     <span class="sub-link-text">Contact Info</span>
                   </a>
@@ -120,7 +165,12 @@
 
           <!-- Category 02: Tech Stacks -->
           <div class="nav-accordion-group" data-group="skills">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="group-skills-links">
+            <button
+              class="accordion-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="group-skills-links"
+            >
               <span class="group-title-wrap">
                 <span class="group-num">02</span>
                 <span class="group-label">Tech Stacks</span>
@@ -130,19 +180,31 @@
             <div class="accordion-body" id="group-skills-links">
               <ul class="accordion-links-list">
                 <li>
-                  <a href="#skills" class="accordion-sub-link" data-target="skills">
+                  <a
+                    href="#skills"
+                    class="accordion-sub-link"
+                    data-target="skills"
+                  >
                     <span class="sub-link-num">1</span>
                     <span class="sub-link-text">Frontend Development</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" class="accordion-sub-link" data-target="skills">
+                  <a
+                    href="#skills"
+                    class="accordion-sub-link"
+                    data-target="skills"
+                  >
                     <span class="sub-link-num">2</span>
                     <span class="sub-link-text">Backend &amp; Systems</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" class="accordion-sub-link" data-target="skills">
+                  <a
+                    href="#skills"
+                    class="accordion-sub-link"
+                    data-target="skills"
+                  >
                     <span class="sub-link-num">3</span>
                     <span class="sub-link-text">Databases &amp; DevOps</span>
                   </a>
@@ -153,7 +215,12 @@
 
           <!-- Category 03: Featured Projects -->
           <div class="nav-accordion-group" data-group="projects">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="group-projects-links">
+            <button
+              class="accordion-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="group-projects-links"
+            >
               <span class="group-title-wrap">
                 <span class="group-num">03</span>
                 <span class="group-label">Featured Projects</span>
@@ -163,19 +230,31 @@
             <div class="accordion-body" id="group-projects-links">
               <ul class="accordion-links-list">
                 <li>
-                  <a href="#projects" class="accordion-sub-link" data-target="projects">
+                  <a
+                    href="#projects"
+                    class="accordion-sub-link"
+                    data-target="projects"
+                  >
                     <span class="sub-link-num">1</span>
                     <span class="sub-link-text">Modern Web Apps</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" class="accordion-sub-link" data-target="projects">
+                  <a
+                    href="#projects"
+                    class="accordion-sub-link"
+                    data-target="projects"
+                  >
                     <span class="sub-link-num">2</span>
                     <span class="sub-link-text">Full-Stack Systems</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" class="accordion-sub-link" data-target="projects">
+                  <a
+                    href="#projects"
+                    class="accordion-sub-link"
+                    data-target="projects"
+                  >
                     <span class="sub-link-num">3</span>
                     <span class="sub-link-text">Open Source Repos</span>
                   </a>
@@ -186,7 +265,12 @@
 
           <!-- Category 04: Education & Journey -->
           <div class="nav-accordion-group" data-group="education">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="group-education-links">
+            <button
+              class="accordion-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="group-education-links"
+            >
               <span class="group-title-wrap">
                 <span class="group-num">04</span>
                 <span class="group-label">Education &amp; Journey</span>
@@ -196,15 +280,25 @@
             <div class="accordion-body" id="group-education-links">
               <ul class="accordion-links-list">
                 <li>
-                  <a href="#education" class="accordion-sub-link" data-target="education">
+                  <a
+                    href="#education"
+                    class="accordion-sub-link"
+                    data-target="education"
+                  >
                     <span class="sub-link-num">1</span>
                     <span class="sub-link-text">PUP BSIT Degree</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#education" class="accordion-sub-link" data-target="education">
+                  <a
+                    href="#education"
+                    class="accordion-sub-link"
+                    data-target="education"
+                  >
                     <span class="sub-link-num">2</span>
-                    <span class="sub-link-text">Certifications &amp; Awards</span>
+                    <span class="sub-link-text"
+                      >Certifications &amp; Awards</span
+                    >
                   </a>
                 </li>
               </ul>
@@ -213,7 +307,12 @@
 
           <!-- Category 05: Connect -->
           <div class="nav-accordion-group" data-group="contact">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="group-contact-links">
+            <button
+              class="accordion-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="group-contact-links"
+            >
               <span class="group-title-wrap">
                 <span class="group-num">05</span>
                 <span class="group-label">Connect</span>
@@ -223,19 +322,33 @@
             <div class="accordion-body" id="group-contact-links">
               <ul class="accordion-links-list">
                 <li>
-                  <a href="#contact" class="accordion-sub-link" data-target="contact">
+                  <a
+                    href="#contact"
+                    class="accordion-sub-link"
+                    data-target="contact"
+                  >
                     <span class="sub-link-num">1</span>
                     <span class="sub-link-text">Direct Contact Card</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/EduCode597" target="_blank" rel="noopener noreferrer" class="accordion-sub-link">
+                  <a
+                    href="https://github.com/EduCode597"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="accordion-sub-link"
+                  >
                     <span class="sub-link-num">2</span>
                     <span class="sub-link-text">GitHub Profile</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/john-eduard-madriaga-8b656434b" target="_blank" rel="noopener noreferrer" class="accordion-sub-link">
+                  <a
+                    href="https://www.linkedin.com/in/john-eduard-madriaga-710198396/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="accordion-sub-link"
+                  >
                     <span class="sub-link-num">3</span>
                     <span class="sub-link-text">LinkedIn Network</span>
                   </a>
@@ -256,7 +369,10 @@
                 width="38"
                 height="38"
               />
-              <span class="user-status-indicator" title="Online / Open to work"></span>
+              <span
+                class="user-status-indicator"
+                title="Online / Open to work"
+              ></span>
             </div>
             <div class="user-details">
               <span class="user-name">EduCode</span>
@@ -273,7 +389,12 @@
                 <i class="bi bi-sun-fill theme-icon-sun"></i>
                 <i class="bi bi-moon-stars-fill theme-icon-moon"></i>
               </button>
-              <a href="#about" class="sidebar-action-btn" title="Back to Top" aria-label="Back to Top">
+              <a
+                href="#about"
+                class="sidebar-action-btn"
+                title="Back to Top"
+                aria-label="Back to Top"
+              >
                 <i class="bi bi-arrow-up-circle"></i>
               </a>
             </div>
@@ -282,11 +403,11 @@
       </div>
     </aside>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        Main Content Landmark
        ========================================================================== -->
-  <main id="main-content">
-    <!-- ==========================================================================
+    <main id="main-content">
+      <!-- ==========================================================================
        Hero & Identity Bento Section
        ========================================================================== -->
       <section id="about" class="bento-section">
@@ -374,7 +495,7 @@
                   <i class="bi bi-github"></i>
                 </a>
                 <a
-                  href="https://www.facebook.com/johneduard.madriaga.7"
+                  href="https://www.facebook.com/profile.php?id=61587827691334"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="social-icon-btn"
@@ -383,7 +504,7 @@
                   <i class="bi bi-facebook"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/duard.gg/"
+                  href="https://www.instagram.com/eduard_madriaga/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="social-icon-btn"
@@ -672,13 +793,13 @@
               </ul>
               <div class="mt-auto pt-3">
                 <a
-                  href="https://www.facebook.com/share/17aqtWexju/"
+                  href="https://www.facebook.com/profile.php?id=61566052250183"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="project-btn project-btn-secondary"
                 >
                   <i class="bi bi-box-arrow-up-right"></i>
-                  <span>Visit Triwan Club</span>
+                  <span>Visit Porwan Club</span>
                 </a>
               </div>
             </article>

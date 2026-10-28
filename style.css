@@ -4,22 +4,22 @@
    ========================================================================== */
 
 /* 1. Core Tokens, Typography, Reset & Layout */
-@import "css/tokens.css";
+@import "css/tokens.css?v=v20261028_1";
 
 /* 2. Floating Sidebar & Mobile Drawer Navigation */
-@import "css/sidebar.css";
+@import "css/sidebar.css?v=v20261028_1";
 
 /* 3. Bento Grid Foundation & Hero Section */
-@import "css/hero.css";
+@import "css/hero.css?v=v20261028_1";
 
 /* 4. Tech Stacks Matrix & Skill Chips */
-@import "css/skills.css";
+@import "css/skills.css?v=v20261028_1";
 
 /* 5. Project Case Studies & Bento Grid Showcase */
-@import "css/projects.css";
+@import "css/projects.css?v=v20261028_1";
 
 /* 6. Education & Campus Community */
-@import "css/education.css";
+@import "css/education.css?v=v20261028_1";
 
 /* 7. Site Footer & Feedback Toast */
-@import "css/footer.css";
+@import "css/footer.css?v=v20261028_1";

@@ -570,23 +570,31 @@ body.sidebar-drawer-locked {
     display: none;
   }
 
+  /* Centered Frame Math:
+     Total assembly: Sidebar (320px) + Gap (36px) + Main Content (1240px) = 1596px ≈ 1600px.
+     On viewports > 1600px (e.g. 1920px Full HD, 2560px 2K, Ultrawides),
+     both the floating sidebar and main content center harmoniously as a unified unit.
+     On viewports 1200px–1600px, the sidebar docks at left: 24px with standard offset.
+  */
   .floating-sidebar {
     top: 24px;
     bottom: 24px;
-    left: 24px;
+    left: max(24px, calc(50vw - 800px));
     transform: translateX(0);
+    transition: left var(--transition-fast), transform var(--transition-smooth);
   }
 
   /* Offset main portfolio content to make room for persistent sidebar */
   body {
-    padding-left: 368px;
+    padding-left: max(380px, calc(50vw - 444px));
+    padding-right: max(24px, calc(50vw - 800px));
   }
 
   .app-container {
-    max-width: 1180px;
-    margin-left: 0;
+    max-width: 1240px;
+    margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
