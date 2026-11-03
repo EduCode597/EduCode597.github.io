@@ -34,6 +34,37 @@ export const projectsData = [
     ]
   },
   {
+    id: "ec-tools",
+    title: "EC-Tools — Developer Resource Navigator",
+    category: "frontend",
+    categoryLabel: "Developer Toolkit",
+    status: "Live Deployed",
+    layout: "project-regular",
+    skills: "javascript html5 css3 bootstrap git",
+    problemSolved:
+      "A personal developer portal for browsing and searching all the tools, frameworks, databases, deployment platforms, and open-source skills I use to complete projects—complete with instant live search, tag filtering, and practical workflow notes.",
+    techTags: [
+      "JavaScript (ES6+)",
+      "HTML5 / CSS3",
+      "Bootstrap 5",
+      "GitHub Pages"
+    ],
+    links: [
+      {
+        label: "Live Demo",
+        url: "https://educode597.github.io/EC-Tools/",
+        icon: "bi-box-arrow-up-right",
+        isPrimary: true
+      },
+      {
+        label: "Source Code",
+        url: "https://github.com/EduCode597/EC-Tools",
+        icon: "bi-github",
+        isPrimary: false
+      }
+    ]
+  },
+  {
     id: "karaoke",
     title: "PinoyVideoke / Karaoke",
     category: "frontend",
